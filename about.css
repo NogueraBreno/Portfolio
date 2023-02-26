@@ -1,0 +1,182 @@
+.tl-div{
+    width: 100%;
+    height: auto;
+    font-family: Impact;
+    padding: 50px 0;
+    display: grid;
+    place-items: center;
+}
+.tl-title{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    margin-bottom: 80px;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255,0.7);
+}
+.tl-title::after{
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+}
+
+.tlContainer{
+    width: 70%;
+    height: auto;
+    position: relative;
+}
+.tlContainer .tl-ul::after{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(50, 50, 50), rgb(50, 50, 50));
+}
+.tlContainer .tl-ul{
+    list-style: none;
+}
+.tlContainer .tl-ul .tl-li{
+    width: 50%;
+    height: auto;
+    padding: 15px 20px;
+    background-color: rgba(255,255,255);
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 25px rgba(51, 51, 51, 0.192);
+    position: relative;
+    z-index: 99;
+}
+.tlContainer .tl-ul .tl-li:nth-child(odd){
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+}
+.tlContainer .tl-ul .tl-li:nth-child(odd) .date{
+    right: 20px;
+}
+.tlContainer .tl-ul .tl-li:nth-child(even){
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+}
+.tlContainer .tl-ul .tl-li:nth-last-child(){
+    margin-bottom: 0;
+}
+.tlContainer .tl-ul .tl-li .title{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    ;
+}
+.tl-ul .tl-li p{
+    font-size: 20px;
+    color: rgb(70, 70, 70);
+    margin: 7px 0;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+.tl-ul .tl-li .date{
+    font-size: 18px;
+    color: rgba(0,0,0);
+    position: absolute;
+    top: -45px;
+    width: 135px;
+    height: 35px;
+    border-radius: 5px;
+    background: linear-gradient(180deg, rgba(150,150,150,0.4) 10%, rgba(150,150,150,0.9) 100%);
+    display: grid;
+    place-items: center;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255,0.7);
+}
+.tlContainer .tl-ul .tl-li .circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgba(150, 150, 150);
+    position: absolute;
+    top: 0;
+}
+.tlContainer .tl-ul .tl-li .circle::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+	background-color: rgb(255,255,255);
+    border-radius: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.tlContainer .tl-ul .tl-li:nth-child(odd) .circle{
+    right: -30px;
+    transform: translate(50%, -50%);
+}
+.tlContainer .tl-ul .tl-li:nth-child(even) .circle{
+    left: -30px;
+    transform: translate(-50%, -50%);
+}
+
+.spinner-grow {
+    --bs-spinner-width: 1.8rem !important;
+    --bs-spinner-height: 1.8rem !important;
+    background-color: rgba(150, 150, 150) !important;
+    margin-left: 2.2em;
+    margin-top: -1em;
+}
+.spinner-border , .spinner-grow {
+    border-radius: 5px !important;
+}
+
+
+@media screen and (max-width:1224px){
+    .tlContainer{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:993px){
+    .tlContainer{
+        width: 80%;
+        transform: translateX(15px);
+    }
+    .tlContainer .tl-ul::after{
+        left: -30px;
+    }
+    .tlContainer .tl-ul .tl-li{
+        width: 100%;
+        float: none;
+        clear: none;
+        margin-bottom: 80px;
+    }
+    .tlContainer .tl-ul .tl-li:nth-child(odd){
+        text-align: left;
+        transform: translateX(0);
+    }
+    .tlContainer .tl-ul .tl-li:nth-child(odd) .date{
+        left: 20px;
+    }
+    .tlContainer .tl-ul .tl-li:nth-child(odd) .circle{
+        left: -30px;
+        transform: translate(-50%, -50%);
+    }
+    .tlContainer .tl-ul .tl-li:nth-child(even){
+        transform: translateX(0);
+    }
+    .tlContainer .tl-ul .tl-li .title{
+        font-size: 100%;
+    }
+    .tl-ul .tl-li p{
+        font-size: 90%;
+
+    }
+    .spinner-grow {
+        margin-left: -16em;
+    }
+}
+
