@@ -1,3 +1,5 @@
+
+
 * {
 	margin-bottom: 5px;
 }
@@ -33,7 +35,7 @@ body {
 }
 
 .sticky-top {
-	background-color: rgb(92, 92, 92);
+	background-color: rgb(150, 150, 150) ;
     transition: 0.1s;
     transition-duration: 0.3s;
 }
@@ -53,24 +55,15 @@ body {
 
 }
 
-#welcome{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 4em;
-}
-#show-button{
-
-    border-radius: 25px;
-
-}
-
-
 .hidden-objects{
     
-    /*visibility: hidden;*/
-    display: none;
-    animation: fadein 1s;
+   animation: 2s linear fadein;
+  
+}
 
-
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
   
 .content-div {
@@ -99,7 +92,7 @@ body {
     font-family: Impact ;
     -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: rgb(255, 255, 255);
-    border: 0;
+    margin-bottom: 0;
     text-align-last: center;
 
 }
@@ -126,31 +119,9 @@ body {
 
 
 #tl-slide {
-	padding: 15px;
+	padding: 0px 15px;
     text-align: -webkit-center;
 }
-
-/*.mySlidesSkills{
-    width: 150px;
-    display: none;
-    max-width: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    border-radius: 15px;
-    padding: 5% 20% 10%;
-
-}
-
-.mySlidesCerts {
-    width: 350px;
-    display: none;
-    max-width: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    border-radius: 15px;
-    padding: 0.5em 2em 2em;
-
-} */
 
 .slides-shadow {
     box-shadow: 0 1rem 5rem rgba(0,0,0,0.35)!important;
@@ -166,7 +137,6 @@ body {
 
 #bot-principal {
 
-	background-color: rgb(242, 242, 242, 0.5);
 	border-radius: 15px;
 	height: auto;
 	width: 100%;    
@@ -176,10 +146,23 @@ body {
 
 }
 
+.card-cert {
+    background-color: rgb(255,255,255)  !important;
+}
+
+.title-exp{
+    font-family: Impact ;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    text-align-last: center;
+}
 .card-exp{
 
-    max-width: 540px;
-    padding: 1%;
+    max-width: 66%;
+    padding: 0% 1%;
+    display: flex !important;
+    flex-direction: row !important;
+    margin-top: 0 !important;
 
 }
 
@@ -192,6 +175,17 @@ body {
     margin-bottom: 1em !important;
 }
 
+.inner-card-exp{
+    border-radius: 5px;
+    margin: 5px;
+    background-color: rgb(255,255,255);
+}
+
+.card {
+    --bs-card-bg: transparent !important;
+    border: transparent !important;
+}
+
  #bt-social {
 
  	width: 50px;
@@ -199,16 +193,16 @@ body {
  	
  }
 
+ .links-contact{
+    text-decoration: none;
+
+}
 
  label{
 	border-radius: 10px;
  }
 
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
 
 
 
@@ -262,8 +256,25 @@ body {
     .logo-exp{
         max-width: 33% !important;
     }
+
+    .title-exp{
+        margin-bottom: -8px;
+    }
+    .tl-skillstitle,.title-exp{
+        margin-top: 5px;
+
+    }
+
     .card-exp{
-        margin: 5%;
+
+        max-width: 100%;
+        padding: 1%;
+        margin: 5px !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .inner-card-exp {
+        margin: 5px 0px;
     }
     .dados-exp{
         width: 67% !important;
