@@ -2,8 +2,13 @@
 @import "projects.css";
 @import "contacts.css";
 
+
+
+
+
 * {
 	margin-bottom: 5px;
+    font-family: Impact;
 }
 
 :root {
@@ -28,12 +33,27 @@ body {
     padding-bottom: 0.5em;
 
 }
-#portfolio-topo {
+#portfolio-h1 {
     text-align: center;
     font-size: 4em;
     font-family: Impact;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0);
     margin: 0 !important;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #f8f9fa;
+    margin-bottom: -0.4em !important;
+}
+
+#portfolio-h2{
+    font-size: 2em;
+    color:  rgba(255, 255, 255, 0);
+    margin: 0 !important;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #f8f9fa;
+
+}
+#navbar-topo{
+    margin-top: 0.5em !important
 }
 
 .sticky-top {
@@ -42,6 +62,29 @@ body {
     transition-duration: 0.3s;
 }
 
+
+.hidden-objects{
+    
+    animation: 2s linear fadein;
+   
+ }
+
+ 
+ #bt-social {
+
+    width: 50px;
+    height: 50px;
+    
+}
+
+.links-contact{
+   text-decoration: none;
+
+}
+
+
+
+
 .btn-md {
     --bs-btn-padding-y: 0.5rem !important;
     --bs-btn-padding-x: 1.5rem !important;
@@ -49,19 +92,7 @@ body {
     margin: 0% 1%;
 }
 
-#show-button-div {
 
-    text-align: center;
-    animation: 1s !important;
-    margin-top: 20%;
-
-}
-
-.hidden-objects{
-    
-   animation: 2s linear fadein;
-  
-}
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -77,7 +108,7 @@ body {
 
 }
 
-#tl-text {
+#present-text {
         font-size: 1.5em;
 	    text-size-adjust: auto;
 	    margin : 5px;
@@ -90,27 +121,7 @@ body {
 
 }
 
-.tl-skillstitle{
-    font-family: Impact ;
-    -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
-    margin-bottom: 0;
-    text-align-last: center;
-
-}
-
-#img-principal {
-    inline-size: -webkit-fill-available;
-    max-width: 500px;
-    border-radius: 15px;
-    margin: 5px;
-    min-width: 150px;
-    align-content: center;
-}
-
-
-
-#tl-conteudo {
+#present-content {
 
     padding: 15px;
     place-items: center;
@@ -120,7 +131,7 @@ body {
 }
 
 
-#tl-slide {
+#all-slide {
 	padding: 0px 15px;
     text-align: -webkit-center;
 }
@@ -160,7 +171,7 @@ body {
 }
 .card-exp{
 
-    max-width: 66%;
+    max-width: 100%;
     padding: 0% 1%;
     display: flex !important;
     flex-direction: row !important;
@@ -188,17 +199,6 @@ body {
     border: transparent !important;
 }
 
- #bt-social {
-
- 	width: 50px;
- 	height: 50px;
- 	
- }
-
- .links-contact{
-    text-decoration: none;
-
-}
 
  label{
 	border-radius: 10px;
@@ -207,40 +207,22 @@ body {
 
 
 
-
 @media only screen and (max-width: 600px) {
 
-    
-    #welcome {
-        font-size: xx-large;
-    }
-    #show-button{
-        background: url("https://cdn-icons-png.flaticon.com/512/6692/6692271.png") center / 80px 80px no-repeat; 
-        height: 100px;
-        width: 100px;
-        border-radius: 50px;
-        content-visibility: hidden;
-
-    }
-
+ 
     .btn-md {
         --bs-btn-padding-y: .25rem !important; 
         --bs-btn-padding-x: .5rem !important; 
         --bs-btn-font-size: .75rem !important;
     }
 
-    #tl-text {
+    #present-text {
 
         margin: 20px;
         font-size: 0.8em;
 
     }
 
-    #img-principal{
-      /*  max-width: 80%; */
-      padding: 10px;
-
-        }
     .rows{
         padding-left: 0 !important;
         padding-right: 0 !important;
@@ -262,7 +244,7 @@ body {
     .title-exp{
         margin-bottom: -8px;
     }
-    .tl-skillstitle,.title-exp{
+    .tl-cardtitle,.title-exp{
         margin-top: 5px;
 
     }
