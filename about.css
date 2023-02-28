@@ -7,7 +7,7 @@
     place-items: center;
 }
 .tl-title{
-    font-size: 50px;
+    font-size: min(max(25px,5vw),50px);
     color: rgb(0, 0, 0);
     position: relative;
     margin-bottom: 80px;
@@ -22,6 +22,7 @@
     bottom: -5px;
     transform: translateX(-50%);
 }
+
 
 .tlContainer{
     width: 70%;
@@ -74,10 +75,8 @@
 }
 .tl-ul .tl-li p{
     font-size: 20px;
-    color: rgb(70, 70, 70);
+    color: rgb(50, 50, 50);
     margin: 7px 0;
-    -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 
 .tl-ul .tl-li .date{
@@ -131,6 +130,15 @@
 }
 .spinner-border , .spinner-grow {
     border-radius: 5px !important;
+}
+
+.tl-cardtitle{
+    font-family: Impact ;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    text-align-last: center;
+
 }
 
 
