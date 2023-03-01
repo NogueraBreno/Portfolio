@@ -1,0 +1,65 @@
+.contacts-div{
+    text-align: -webkit-center;
+    padding: 0% 15%;
+    margin-top: 1%;
+}
+
+.card-contact {
+
+    margin: 0% 10% 10%!important
+
+}
+
+.email-div{
+    display: grid;
+    text-align: -webkit-center;
+    background: linear-gradient(180deg, rgba(150,150,150,0.4) 10%, rgba(150,150,150,0.9) 100%);
+    border-radius: 10px;
+    margin: 0% 18.5% 1% !important;
+
+}
+
+.form-control{
+    width: 60% !important;
+    text-align: center;
+    color: rgb(39, 39, 39) !important;
+}
+
+.form-message{
+    width: 90% !important;
+    height: 10em !important;
+}
+
+.form-label{
+    font-size: 1.7em !important;
+
+}
+
+#hidden-captcha {
+    display: none;
+}
+
+.send-button {
+    margin: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+
+.contacts-div{
+
+padding: 0% 1%;    
+}
+.card-contact{
+    margin: 5%!important;
+}
+
+.form-message , .form-control{
+    width: 90% !important;
+}
+
+.email-div{
+    margin: 0% 5% 5% !important;
+}
+
+
+}
