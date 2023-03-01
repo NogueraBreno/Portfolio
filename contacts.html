@@ -66,27 +66,19 @@
 </div>
 <div class="email-div">
 
-    <%= form_for Contact.new do |f| %>
-            <%= f.label :name ,'NOME', class: "form-label form-texto" %><br>
-            <%= f.text_field :name, required: true , class:"form-control",disabled: true %>
+ <form>
+     
+             <label class = "form-label form-texto">NOME</label>
+            <input type="text"  name="name"  class="form-control" disabled>
 
-            <br>
+            <label  class = "form-label form-texto">E-MAIL</label>
+            <input type="email"  name="email" class="form-control" placeholder= 'nick@exemplo.com' disabled>
+     
+            <label  class: "form-label form-texto">MENSAGEM</label>
+            <textarea name="message" placeholder="EM DESENVOLVIMENTO" class="form-control form-message" disabled ></textarea>
 
-            <%= f.label :email ,'E-MAIL', class: "form-label form-texto"  %><br>
-            <%= f.email_field :email, placeholder: 'nick@exemplo.com' , required: true , class:"form-control" , disabled: true %>
-
-            <br>
-
-            <%= f.label :message ,'MENSAGEM', class: "form-label form-texto"  %><br>
-            <%= f.text_area :message, as: :text ,placeholder: 'EM DESENVOLVIMENTO', class:"form-control form-message",disabled: true %><br>
-
-            <div id="hidden-captcha">
-                <%= f.label :nickname %><br>
-                <%= f.text_field :nickname, hint: 'leave this field blank'%>
-            </div>
-
-            <%= f.submit 'ENVIAR', class: "btn btn-dark send-button" ,disabled: true  %>
-     <% end %>
+            <input type="button" value='ENVIAR' class= "btn btn-dark send-button" disabled>
+ </form>
 </div>
 </section>
 <footer class="content-box content-div">
